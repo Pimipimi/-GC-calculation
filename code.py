@@ -1,0 +1,16 @@
+#input your DNA sequence
+seq = str(input('Enter your DNA sequence: '))
+
+#check DNA sequnce containing ATCG
+if ('A' in seq) and ('T' in seq) and ('C' in seq) and ('G' in seq):
+  print("Yeahh that's DNA sequence")
+
+#%GC calculation
+  G = seq.count('G')
+  C = seq.count('C')
+  GC = (G+C)/len(seq)*100
+  print('%GC content =', GC)
+
+#If your sequence do not contain ATCG, it will print this sentence
+else:
+  print("Nope that's not DNA :(")
